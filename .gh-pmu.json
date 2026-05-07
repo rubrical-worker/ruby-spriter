@@ -1,0 +1,194 @@
+{
+  "version": "1.4.9",
+  "project": {
+    "name": "Ruby Spriter",
+    "number": 6,
+    "owner": "rubrical-works"
+  },
+  "repositories": [
+    "rubrical-works/ruby-spriter"
+  ],
+  "framework": "IDPF",
+  "defaults": {
+    "priority": "p2",
+    "status": "backlog"
+  },
+  "fields": {
+    "branch": {
+      "field": "Branch",
+      "values": null
+    },
+    "priority": {
+      "field": "Priority",
+      "values": {
+        "p0": "P0",
+        "p1": "P1",
+        "p2": "P2"
+      }
+    },
+    "status": {
+      "field": "Status",
+      "values": {
+        "backlog": "Backlog",
+        "done": "Done",
+        "in_progress": "In progress",
+        "in_review": "In review",
+        "ready": "Ready"
+      }
+    }
+  },
+  "triage": {
+    "estimate": {
+      "query": "is:issue is:open -has:estimate",
+      "apply": {},
+      "interactive": {
+        "estimate": true
+      }
+    }
+  },
+  "metadata": {
+    "project": {
+      "id": "PVT_kwHOAATLPs4BGIby"
+    },
+    "fields": [
+      {
+        "name": "Title",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFCU",
+        "data_type": "TITLE"
+      },
+      {
+        "name": "Assignees",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFCY",
+        "data_type": "ASSIGNEES"
+      },
+      {
+        "name": "Status",
+        "id": "PVTSSF_lAHOAATLPs4BGIbyzg3RFCc",
+        "data_type": "SINGLE_SELECT",
+        "options": [
+          {
+            "name": "Backlog",
+            "id": "f75ad846"
+          },
+          {
+            "name": "Ready",
+            "id": "61e4505c"
+          },
+          {
+            "name": "In progress",
+            "id": "47fc9ee4"
+          },
+          {
+            "name": "In review",
+            "id": "df73e18b"
+          },
+          {
+            "name": "Done",
+            "id": "98236657"
+          }
+        ]
+      },
+      {
+        "name": "Labels",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFCg",
+        "data_type": "LABELS"
+      },
+      {
+        "name": "Linked pull requests",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFCk",
+        "data_type": "LINKED_PULL_REQUESTS"
+      },
+      {
+        "name": "Milestone",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFCo",
+        "data_type": "MILESTONE"
+      },
+      {
+        "name": "Repository",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFCs",
+        "data_type": "REPOSITORY"
+      },
+      {
+        "name": "Reviewers",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFCw",
+        "data_type": "REVIEWERS"
+      },
+      {
+        "name": "Parent issue",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFC0",
+        "data_type": "PARENT_ISSUE"
+      },
+      {
+        "name": "Sub-issues progress",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFC4",
+        "data_type": "SUB_ISSUES_PROGRESS"
+      },
+      {
+        "name": "Priority",
+        "id": "PVTSSF_lAHOAATLPs4BGIbyzg3RFLE",
+        "data_type": "SINGLE_SELECT",
+        "options": [
+          {
+            "name": "P0",
+            "id": "79628723"
+          },
+          {
+            "name": "P1",
+            "id": "0a877460"
+          },
+          {
+            "name": "P2",
+            "id": "da944a9c"
+          }
+        ]
+      },
+      {
+        "name": "Size",
+        "id": "PVTSSF_lAHOAATLPs4BGIbyzg3RFLI",
+        "data_type": "SINGLE_SELECT",
+        "options": [
+          {
+            "name": "XS",
+            "id": "6c6483d2"
+          },
+          {
+            "name": "S",
+            "id": "f784b110"
+          },
+          {
+            "name": "M",
+            "id": "7515a9f1"
+          },
+          {
+            "name": "L",
+            "id": "817d0097"
+          },
+          {
+            "name": "XL",
+            "id": "db339eb2"
+          }
+        ]
+      },
+      {
+        "name": "Estimate",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFLM",
+        "data_type": "NUMBER"
+      },
+      {
+        "name": "Start date",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFLQ",
+        "data_type": "DATE"
+      },
+      {
+        "name": "End date",
+        "id": "PVTF_lAHOAATLPs4BGIbyzg3RFLU",
+        "data_type": "DATE"
+      },
+      {
+        "name": "Branch",
+        "id": "PVTF_lAHOAATLPs4BGIbyzhRfj4g",
+        "data_type": "TEXT"
+      }
+    ]
+  }
+}
