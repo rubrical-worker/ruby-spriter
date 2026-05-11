@@ -1,7 +1,7 @@
 # Project Charter: ruby-spriter
 
 **Status:** Draft
-**Last Updated:** 2026-05-06
+**Last Updated:** 2026-05-07 (added Cross-Project Relationships section)
 **Version:** 0.7.0.1
 
 ## Vision
@@ -35,7 +35,6 @@ Stabilization on the v0.7.0.x line: GIMP 3.x enforcement, headless Linux (Xvfb) 
 ## Out of Scope
 
 - GIMP 2.x support
-- Input formats other than MP4; output formats other than PNG
 - Runtime gem dependencies
 - GUI / interactive editor
 - Hosted service or web frontend
@@ -55,8 +54,23 @@ Stabilization on the v0.7.0.x line: GIMP 3.x enforcement, headless Linux (Xvfb) 
 - Cross-platform parity, including headless Linux
 - High test coverage (currently 512+ specs) with no runtime dependencies
 
+## Cross-Project Relationships
+
+Ruby Spriter sits at the downstream end of a Rubrical Works requirements chain:
+
+`hoi4-usa-2028` → `hoi4-art` → `ruby-spriter`
+
+- **Upstream consumer:** `rubrical-works/hoi4-art` drives sprite/asset pipeline requirements into this project (e.g., portrait sheets, GFX tile layouts, flag composites needed by the HOI4 mod).
+- **Originating source:** `rubrical-works/hoi4-usa-2028` (local: `E:\Projects\hoi4-usa-2028`) is the upstream mod project whose art needs flow through `hoi4-art` and may surface as feature requests here.
+- **Sibling tooling project:** `rubrical-works/hoi4-tools` (local: `E:\Projects\hoi4-tools`) — separate tooling track; ruby-spriter does not implement HOI4-specific tooling.
+
+Ruby Spriter is a graphics-for-games application; scope expansion to serve downstream game projects is expected. Inbound requirements from `hoi4-art` (and other game projects) may legitimately drive new input/output formats (e.g., DDS, TGA, BMP), new layout primitives (portrait sheets, flag composites, GFX tile arrangements), and engine-specific export targets. These are first-class scope candidates, not exclusions — evaluated on fit with the core spritesheet/asset pipeline rather than rejected for being game-engine-specific.
+
 ## References
 
 - `README.md` — user-facing overview
 - `CLAUDE.md` — architecture and component guide
 - `Inception/` — detailed charter artifacts
+- **Upstream mod:** `rubrical-works/hoi4-usa-2028` (local: `E:\Projects\hoi4-usa-2028`)
+- **Direct upstream:** `rubrical-works/hoi4-art`
+- **Sibling tooling:** `rubrical-works/hoi4-tools` (local: `E:\Projects\hoi4-tools`)
