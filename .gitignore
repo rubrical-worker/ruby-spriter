@@ -128,3 +128,5 @@ runp_claude
 .claude/commands/switch-branch.md
 .claude/commands/transfer-issue.md
 .claude/commands/work.md
+.claude/skills/electron-cross-build/
+.claude/skills/electron-development/
