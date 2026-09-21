@@ -17,8 +17,8 @@
     "tdd-refactor-phase",
     "test-writing-patterns"
   ],
-  "frameworkVersion": "0.103.0",
-  "frameworkPath": "C:/ProgramData/praxis-hub/framework_root_0.103.0",
+  "frameworkVersion": "0.104.0",
+  "frameworkPath": "C:/ProgramData/praxis-hub/framework_root_0.104.0",
   "activeDomains": [
     "qa",
     "performance",
