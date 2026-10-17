@@ -18,6 +18,16 @@
         "hooks": [
           {
             "type": "command",
+            "command": "node .claude/hooks/shell-safety-hook.js",
+            "timeout": 5000
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
             "command": "node .claude/hooks/block-cd.js",
             "timeout": 5000
           }
